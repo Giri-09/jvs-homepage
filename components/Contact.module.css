@@ -1,0 +1,87 @@
+.section {
+  padding: 0 clamp(10px, 2vw, 24px) clamp(10px, 2vw, 24px);
+}
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+  gap: clamp(32px, 4vw, 64px);
+  align-items: start;
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding: clamp(22px, 5vw, 72px);
+  border-radius: clamp(22px, 2.6vw, 36px);
+  background: var(--gradient);
+  color: #ffffff;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.title {
+  margin: 0;
+  font-weight: 600;
+  font-size: clamp(34px, 4.4vw, 64px);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.description {
+  margin: 0;
+  max-width: 44ch;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(8px);
+  transition: background 0.2s;
+}
+
+.link:hover {
+  background: rgba(255, 255, 255, 0.26);
+}
+
+.linkLabel {
+  flex: none;
+  width: 52px;
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.linkValue {
+  min-width: 0;
+  font-size: clamp(14px, 1.4vw, 18px);
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.linkArrow {
+  margin-left: auto;
+}
+
+@media (max-width: 400px) {
+  .link {
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .linkLabel {
+    width: 40px;
+  }
+}

@@ -1,0 +1,137 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: clamp(20px, 3vw, 36px);
+  border-radius: 26px;
+  background: #ffffff;
+  color: var(--ink);
+  box-shadow: 0 30px 60px -30px rgba(13, 13, 18, 0.5);
+}
+
+.title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
+  gap: 12px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+
+.input {
+  padding: 14px 16px;
+  border: 1px solid rgba(13, 13, 18, 0.12);
+  border-radius: 14px;
+  background: #fafafa;
+  color: var(--ink);
+  font: inherit;
+  font-size: 16px;
+  outline: none;
+  resize: vertical;
+}
+
+.input:focus {
+  border-color: var(--accent);
+  background: #ffffff;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+.chip {
+  padding: 8px 12px;
+  border: 1px solid rgba(13, 13, 18, 0.14);
+  border-radius: 999px;
+  background: #ffffff;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.chipSelected {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: #ffffff;
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  padding: 0 22px;
+  border: 0;
+  border-radius: 16px;
+  background: var(--ink);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submit:hover {
+  background: var(--dark-line);
+}
+
+.success {
+  justify-content: center;
+  min-height: 380px;
+}
+
+.successIcon {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  background: var(--gradient);
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.successTitle {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.successText {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+
+.resetButton {
+  align-self: flex-start;
+  padding: 12px 18px;
+  border: 1px solid rgba(13, 13, 18, 0.14);
+  border-radius: 14px;
+  background: transparent;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.resetButton:hover {
+  border-color: var(--ink);
+}

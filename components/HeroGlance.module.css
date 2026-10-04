@@ -1,0 +1,294 @@
+/* Text sizes use cqi (a % of this box's width) so the whole
+   composition scales down evenly on smaller screens. */
+.glance {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  aspect-ratio: 1 / 0.92;
+  justify-self: center;
+  container-type: inline-size;
+}
+
+.lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.lines path {
+  fill: none;
+  stroke-opacity: 0.5;
+  stroke-width: 0.25;
+}
+
+.trainingCard {
+  position: absolute;
+  left: 31%;
+  top: 6%;
+  width: 38%;
+  height: 86%;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(6px, 1.9cqi, 12px);
+  padding: clamp(10px, 2.8cqi, 18px) clamp(9px, 2.5cqi, 16px);
+  border-radius: clamp(16px, 4.4cqi, 28px);
+  background: var(--ink);
+  color: #ffffff;
+  box-shadow: 0 30px 60px -24px rgba(13, 13, 18, 0.5);
+  overflow: hidden;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.cardTitleGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.cardTitle {
+  font-size: clamp(11px, 2.65cqi, 17px);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+.cardSubtitle {
+  font-size: clamp(9px, 1.7cqi, 11px);
+  color: #9a9aa6;
+}
+
+.moreDots {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: clamp(18px, 4cqi, 26px);
+  height: clamp(18px, 4cqi, 26px);
+  border-radius: 50%;
+  background: var(--dark-line);
+  font-size: 11px;
+  color: #9a9aa6;
+}
+
+.bars {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  height: clamp(28px, 6.9cqi, 44px);
+}
+
+.bar {
+  flex: 1;
+  border-radius: 2px;
+  transform-origin: center;
+  animation-name: bar;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.dayLabels {
+  display: flex;
+  justify-content: space-between;
+  font-size: clamp(8px, 1.56cqi, 10px);
+  color: #6f6f7a;
+  font-variant-numeric: tabular-nums;
+}
+
+.stageList {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(5px, 1.56cqi, 10px);
+  margin-top: 4px;
+  font-size: clamp(9px, 1.8cqi, 11.5px);
+  line-height: 1.35;
+}
+
+.stage {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-top: clamp(4px, 1.25cqi, 8px);
+  border-top: 1px solid var(--dark-line);
+}
+
+.stageDays {
+  font-size: clamp(8px, 1.56cqi, 10px);
+  color: #8a8a96;
+}
+
+.stageName {
+  font-weight: 500;
+}
+
+.partnerBadge {
+  position: absolute;
+  left: 46%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 12px 7px 7px;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px -8px rgba(13, 13, 18, 0.25);
+  font-size: clamp(9.5px, 1.7cqi, 11px);
+  white-space: nowrap;
+}
+
+.badgeIcon {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  background: var(--gradient);
+  color: #ffffff;
+}
+
+.badgeText {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.badgeText b {
+  font-weight: 700;
+}
+
+.badgeText span {
+  color: #6a6a75;
+  font-size: clamp(8.5px, 1.56cqi, 10px);
+}
+
+.quoteCard {
+  position: absolute;
+  left: 22%;
+  top: 47%;
+  width: 50%;
+  display: flex;
+  gap: 10px;
+  padding: clamp(9px, 2.2cqi, 14px);
+  border-radius: clamp(14px, 3.1cqi, 20px);
+  background: #ffffff;
+  box-shadow: 0 24px 50px -18px rgba(13, 13, 18, 0.35);
+  animation: float 6s ease-in-out infinite;
+}
+
+.quoteAvatar {
+  flex: none;
+  width: clamp(26px, 5.3cqi, 34px);
+  height: clamp(26px, 5.3cqi, 34px);
+  border-radius: 10px;
+  object-fit: cover;
+  background: var(--tint);
+}
+
+.quoteBody {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.quoteTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.nameTag,
+.roleTag {
+  padding: 2px 7px;
+  border-radius: 999px;
+  color: #ffffff;
+  font-size: clamp(8px, 1.5cqi, 9.5px);
+}
+
+.nameTag {
+  background: var(--ink);
+}
+
+.roleTag {
+  background: var(--gradient);
+}
+
+.quoteText {
+  margin: 0;
+  font-size: clamp(10.5px, 2.35cqi, 15px);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+.pulseDot {
+  position: absolute;
+  left: 28%;
+  top: 58%;
+  width: 22px;
+  height: 22px;
+  margin: -11px 0 0 -11px;
+  border-radius: 50%;
+  background: var(--gradient);
+  box-shadow: 0 0 0 6px color-mix(in oklab, var(--accent) 18%, transparent);
+}
+
+.tile {
+  position: absolute;
+  width: 24%;
+  aspect-ratio: 1.2 / 1;
+  margin: 0;
+  border-radius: clamp(10px, 2.8cqi, 18px);
+  overflow: hidden;
+  background: var(--tint);
+  box-shadow: 0 12px 30px -12px rgba(13, 13, 18, 0.35);
+}
+
+.tile img {
+  object-fit: cover;
+}
+
+.tileRinged {
+  box-shadow: 0 0 0 3px #ffffff, 0 0 0 5px var(--accent);
+}
+
+.tileTag {
+  position: absolute;
+  left: clamp(4px, 1.25cqi, 8px);
+  bottom: clamp(4px, 1.25cqi, 8px);
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: rgba(13, 13, 18, 0.72);
+  color: #ffffff;
+  font-size: clamp(8.5px, 1.65cqi, 10.5px);
+  font-weight: 500;
+  backdrop-filter: blur(6px);
+}
+
+/* On narrow phones the card gets too short for the stage list,
+   so we keep just the chart and let the quote card breathe. */
+@media (max-width: 440px) {
+  .stageList {
+    display: none;
+  }
+
+  .quoteCard {
+    left: 14%;
+    width: 64%;
+  }
+
+  .partnerBadge {
+    left: 34%;
+  }
+
+  .tileTag {
+    padding: 2px 6px;
+  }
+}
