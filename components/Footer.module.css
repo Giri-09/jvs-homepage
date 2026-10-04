@@ -78,7 +78,8 @@
     gap: 28px 16px;
   }
 
-  .brand {
+  .brand,
+  .contactColumn {
     grid-column: 1 / -1;
   }
 

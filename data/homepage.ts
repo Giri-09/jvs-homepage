@@ -39,8 +39,7 @@ export const contactInfo = {
 
 export const siteInfo = {
   title: "JVS — Driving Success Through Education, Events & Innovation",
-  description:
-    "JVS is a growing business group driven by innovation, vision, and versatility.",
+  description: "JVS is a growing business group driven by innovation, vision, and versatility.",
   logoText: "JVS",
   name: "JVS",
   tagline: "Versatile Stability",
@@ -229,8 +228,7 @@ export const services: Service[] = [
   },
   {
     title: "Digital Solutions",
-    description:
-      "Visibility and identity for growing brands, planned around a clear growth strategy.",
+    description: "Visibility and identity for growing brands, planned around a clear growth strategy.",
     tags: ["Marketing", "SEO", "Branding"],
     brand: "Startix",
     image: {
@@ -246,8 +244,7 @@ export const services: Service[] = [
   },
   {
     title: "Business & Consulting",
-    description:
-      "Complete support for setting up and protecting a business, across every registration type.",
+    description: "Complete support for setting up and protecting a business, across every registration type.",
     tags: ["Startups", "Registration", "Consulting"],
     brand: "Startix",
     image: {
@@ -263,8 +260,7 @@ export const services: Service[] = [
   },
   {
     title: "Technology & Innovation",
-    description:
-      "Modern, responsive digital products for the brands and ventures we work with.",
+    description: "Modern, responsive digital products for the brands and ventures we work with.",
     tags: ["Web", "Apps", "Software"],
     brand: "Startix",
     image: {
@@ -324,7 +320,7 @@ export const brandsSection = {
       focus: "Academics & skills",
       handle: "jvs_learnix",
       image: {
-        src: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=700&q=70",
+        src: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=700&q=70",
         alt: "Learnix",
       },
       items: ["Project reports", "Live source codes", "PPTs & research", "Placement training"],

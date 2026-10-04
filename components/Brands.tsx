@@ -18,7 +18,12 @@ export default function Brands() {
           {brandsSection.brands.map((brand) => (
             <a key={brand.name} href={brand.url} target="_blank" rel="noopener" className={styles.card}>
               <div className={styles.imageWrap}>
-                <Image src={brand.image.src} alt={brand.image.alt} fill sizes="(max-width: 640px) 100vw, 320px" />
+                <Image
+                  src={brand.image.src}
+                  alt={brand.image.alt}
+                  fill
+                  sizes="(max-width: 640px) 100vw, 320px"
+                />
               </div>
               <div className={styles.body}>
                 <div className={styles.titleRow}>

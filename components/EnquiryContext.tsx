@@ -16,7 +16,7 @@ export function EnquiryProvider({ children }: { children: React.ReactNode }) {
 
   const toggleInterest = (service: string) => {
     setInterests((current) =>
-      current.includes(service) ? current.filter((item) => item !== service) : [...current, service]
+      current.includes(service) ? current.filter((item) => item !== service) : [...current, service],
     );
   };
 

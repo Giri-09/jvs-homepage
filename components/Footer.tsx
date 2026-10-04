@@ -28,7 +28,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className={styles.column}>
+        <div className={`${styles.column} ${styles.contactColumn}`}>
           <b>Reach us</b>
           <a href={contactInfo.phoneLink}>{contactInfo.phone}</a>
           <a href={contactInfo.emailLink} className={styles.email}>

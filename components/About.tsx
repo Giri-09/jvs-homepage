@@ -8,10 +8,20 @@ export default function About() {
       <div className={styles.grid}>
         <div className={styles.gallery}>
           <div className={`${styles.photo} ${styles.mainPhoto}`}>
-            <Image src={about.mainImage.src} alt={about.mainImage.alt} fill sizes="(max-width: 960px) 100vw, 600px" />
+            <Image
+              src={about.mainImage.src}
+              alt={about.mainImage.alt}
+              fill
+              sizes="(max-width: 960px) 100vw, 600px"
+            />
           </div>
           <div className={`${styles.photo} ${styles.sidePhoto}`}>
-            <Image src={about.sideImage.src} alt={about.sideImage.alt} fill sizes="(max-width: 960px) 50vw, 300px" />
+            <Image
+              src={about.sideImage.src}
+              alt={about.sideImage.alt}
+              fill
+              sizes="(max-width: 960px) 50vw, 300px"
+            />
           </div>
           <div className={styles.lettersCard}>
             <span className={styles.lettersTitle}>{about.lettersTitle}</span>

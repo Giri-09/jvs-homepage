@@ -19,7 +19,7 @@ export default function Services() {
     .filter((service) => filter === "All" || service.brand === filter);
 
   const visibleIndexes = visibleServices.map((service) => service.index);
-  const currentIndex = visibleIndexes.includes(activeIndex) ? activeIndex : visibleIndexes[0] ?? 0;
+  const currentIndex = visibleIndexes.includes(activeIndex) ? activeIndex : (visibleIndexes[0] ?? 0);
 
   const changeFilter = (newFilter: string) => {
     setFilter(newFilter);

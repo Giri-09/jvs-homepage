@@ -27,7 +27,11 @@ export default function Header() {
           <a href={contactInfo.phoneLink} aria-label="Call JVS" className={styles.iconButton}>
             <Icon name="phone" size={18} strokeWidth={1.8} />
           </a>
-          <a href={contactInfo.emailLink} aria-label="Email JVS" className={`${styles.iconButton} ${styles.iconButtonWhite}`}>
+          <a
+            href={contactInfo.emailLink}
+            aria-label="Email JVS"
+            className={`${styles.iconButton} ${styles.iconButtonWhite}`}
+          >
             <Icon name="mail" size={18} strokeWidth={1.8} />
           </a>
           <button

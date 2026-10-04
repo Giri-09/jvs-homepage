@@ -96,23 +96,40 @@ button {
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
 }
 
 @keyframes ring {
-  from { background-position: 0% 0; }
-  to { background-position: 150% 0; }
+  from {
+    background-position: 0% 0;
+  }
+  to {
+    background-position: 150% 0;
+  }
 }
 
 @keyframes bar {
-  from { transform: scaleY(0.35); }
-  to { transform: scaleY(1); }
+  from {
+    transform: scaleY(0.35);
+  }
+  to {
+    transform: scaleY(1);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  *, *::before, *::after {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
     animation: none !important;
     transition: none !important;
   }

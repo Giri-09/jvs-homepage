@@ -40,7 +40,9 @@
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
-  transition: background 0.2s, color 0.2s;
+  transition:
+    background 0.2s,
+    color 0.2s;
 }
 
 .filterActive {
@@ -76,7 +78,10 @@
   color: #ffffff;
   text-align: left;
   cursor: pointer;
-  transition: padding 0.35s cubic-bezier(0.2, 0.7, 0.2, 1), background 0.35s, box-shadow 0.35s;
+  transition:
+    padding 0.35s cubic-bezier(0.2, 0.7, 0.2, 1),
+    background 0.35s,
+    box-shadow 0.35s;
 }
 
 .rowActive {
@@ -128,7 +133,9 @@
   border: 1.5px solid rgba(255, 255, 255, 0.8);
   opacity: 0;
   transform: translateX(-12px);
-  transition: opacity 0.3s, transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1);
+  transition:
+    opacity 0.3s,
+    transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1);
 }
 
 .rowActive .rowArrow {

@@ -5,8 +5,8 @@ import styles from "./HeroGlance.module.css";
 
 // Decorative bar heights (in %) for the training activity chart
 const BAR_HEIGHTS = [
-  30, 55, 40, 75, 50, 90, 65, 40, 80, 100, 60, 45, 85, 55, 70, 95,
-  50, 35, 65, 80, 45, 60, 90, 70, 40, 55, 75, 50, 85, 60, 40, 70,
+  30, 55, 40, 75, 50, 90, 65, 40, 80, 100, 60, 45, 85, 55, 70, 95, 50, 35, 65, 80, 45, 60, 90, 70, 40, 55, 75,
+  50, 85, 60, 40, 70,
 ];
 const HIGHLIGHTED_BARS = 20;
 

@@ -256,7 +256,9 @@
 }
 
 .tileRinged {
-  box-shadow: 0 0 0 3px #ffffff, 0 0 0 5px var(--accent);
+  box-shadow:
+    0 0 0 3px #ffffff,
+    0 0 0 5px var(--accent);
 }
 
 .tileTag {
@@ -284,8 +286,17 @@
     width: 64%;
   }
 
+  .glance {
+    margin-top: 20px;
+  }
+
   .partnerBadge {
-    left: 34%;
+    left: 30%;
+    top: -5%;
+  }
+
+  .pulseDot {
+    display: none;
   }
 
   .tileTag {

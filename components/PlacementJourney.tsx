@@ -11,7 +11,8 @@ export default function PlacementJourney() {
       <div className={styles.header}>
         <span className="section-label">{placementSection.label}</span>
         <h2 className="section-title">
-          {placementSection.titleStart} <span className="gradient-text">{placementSection.titleHighlight}</span>
+          {placementSection.titleStart}{" "}
+          <span className="gradient-text">{placementSection.titleHighlight}</span>
           {placementSection.titleEnd}
         </h2>
       </div>

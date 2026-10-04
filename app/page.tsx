@@ -13,11 +13,9 @@ import { EnquiryProvider } from "@/components/EnquiryContext";
 export default function HomePage() {
   return (
     <EnquiryProvider>
-      <div style={{ background: "var(--bg-soft)" }}>
-        <Header />
-        <Hero />
-      </div>
+      <Header />
       <main>
+        <Hero />
         <BrandStrip />
         <About />
         <Services />
